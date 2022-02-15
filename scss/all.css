@@ -150,7 +150,7 @@ body {
 
 .indexBox .mainBox .slog {
   width: 35%;
-  max-width: 680px;
+  max-width: 580px;
   margin-bottom: 5%;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
@@ -166,7 +166,7 @@ body {
 
 .indexBox .mainBox .device {
   width: 45%;
-  max-width: 850px;
+  max-width: 750px;
 }
 
 @media screen and (max-width: 1600px) {
