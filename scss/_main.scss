@@ -15,7 +15,8 @@ body {
     @include rwd(2200){
         padding-top: 15vw;
     }
-    .mainBox{
+    
+    @at-root .mainBox{
         display: flex;
         align-items: center;
         justify-content: center;

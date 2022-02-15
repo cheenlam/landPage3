@@ -114,7 +114,7 @@ img {
 
 body {
   background: #000  no-repeat center top / contain;
-  background-image: url(../images/tvWall.webp?v=u1dc96883);
+  background-image: url(../images/tvWall.webp?v=u9f13ee7a);
 }
 
 .indexBox {
@@ -128,7 +128,7 @@ body {
   }
 }
 
-.indexBox .mainBox {
+.mainBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +141,7 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-  .indexBox .mainBox {
+  .mainBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -149,7 +149,7 @@ body {
   }
 }
 
-.indexBox .mainBox .slog {
+.mainBox .slog {
   width: 35%;
   max-width: 580px;
   margin-bottom: 5%;
@@ -158,20 +158,20 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-  .indexBox .mainBox .slog {
+  .mainBox .slog {
     width: 70%;
     -webkit-transform: translateX(0%) translateY(-30%);
             transform: translateX(0%) translateY(-30%);
   }
 }
 
-.indexBox .mainBox .device {
+.mainBox .device {
   width: 45%;
   max-width: 750px;
 }
 
 @media screen and (max-width: 1600px) {
-  .indexBox .mainBox .device {
+  .mainBox .device {
     width: 90%;
   }
 }
