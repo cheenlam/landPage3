@@ -117,10 +117,8 @@ body {
 }
 
 .indexBox {
-  max-height: 1024px;
   position: relative;
   padding-top: 330px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 2200px) {

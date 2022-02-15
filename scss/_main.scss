@@ -9,10 +9,8 @@ body {
 }
 
 .indexBox{
-    max-height: 1024px;
     position: relative;
     padding-top: 330px;
-    overflow: hidden;
 
     @include rwd(2200){
         padding-top: 15vw;
