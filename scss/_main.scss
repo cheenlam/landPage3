@@ -15,26 +15,39 @@ body {
     @include rwd(2200){
         padding-top: 15vw;
     }
-    .main{
-        max-width: 1000px;
-        margin: auto;
-        @include rwd(1780){
-            width: 57vw;
-            min-width: 500px;
-            max-width: unset;
+    .mainBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include rwd(1600){
+            flex-direction: column-reverse;
         }
-        @include rwd(550){
-            width: 90%;
-            min-width: 300px;
+
+       .slog{
+            width: 35%;
+            max-width: 680px;
+            margin-bottom: 5%;
+            transform: translateX(10%);
+            @include rwd(1600){
+                width: 70%;
+                transform: translateX(0%) translateY(-30%);
+            }
+        }
+        .device{
+            width: 45%;
+            max-width: 850px;
+            @include rwd(1600){
+                width: 90%;
+            }
         }
     }
-
+ 
     @at-root .dlBox{
         width: 100%;
         position: relative;
-        top: -120px;
-        @include rwd(1780){
-            top: -4vw;
+        top: -30px;
+        @include rwd(1600){
+           top: -8vw;
         }
         .logo{
             width: 180px;
