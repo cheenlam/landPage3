@@ -1,0 +1,206 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+  font-weight: normal;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+}
+
+*:hover, *:focus, *:active {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tt, em {
+  font-family: 'Helvetica', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type="button"],
+input[type="text"],
+input[type="number"],
+textarea {
+  outline: none;
+  font-family: 'Helvetica', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+input[type="password"]::-webkit-textfield-decoration-container {
+  visibility: hidden;
+}
+
+.nofloat:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ::-webkit-scrollbar{ 
+	width:10px;
+	height: 10px;
+	background-color:#f1f1f1;
+} */
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border: 3px #f1f1f1 solid;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background .5s linear;
+  transition: background .5s linear;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  background: #000 url(../images/tvWall.webp) no-repeat center top/contain;
+}
+
+.indexBox {
+  max-height: 1024px;
+  position: relative;
+  padding-top: 330px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 2200px) {
+  .indexBox {
+    padding-top: 15vw;
+  }
+}
+
+.indexBox .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1780px) {
+  .indexBox .main {
+    width: 57vw;
+    min-width: 500px;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .indexBox .main {
+    width: 90%;
+    min-width: 300px;
+  }
+}
+
+.dlBox {
+  width: 100%;
+  position: relative;
+  top: -120px;
+}
+
+@media screen and (max-width: 1780px) {
+  .dlBox {
+    top: -4vw;
+  }
+}
+
+.dlBox .logo {
+  width: 180px;
+  margin: auto;
+}
+
+.dlBox .btnBox {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .dlBox .btnBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.dlBox .btnBox .btn {
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.dlBox .btnBox .btn + .btn {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .dlBox .btnBox .btn + .btn {
+    margin-left: 0;
+    margin-top: -25px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
