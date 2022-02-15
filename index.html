@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/all.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="scss/all.css" id="cssLick">
+    <title>落地頁03</title>
 </head>
+
 <body>
-    <div class="indexBox">
+    <div class="indexBox" id="indexBox">
         <div class="mainBox">
             <div class="slog">
                 <img src="images/slog.png">
@@ -24,16 +26,23 @@
             <div class="btnBox">
                 <div class="btn android">
                     <img src="images/btn_android.webp">
-                </div> 
+                </div>
                 <div class="btn ios">
                     <img src="images/btn_ios.webp">
                 </div>
             </div>
         </div>
-
     </div>
-  
-    
-    
+
+    <script>
+        // 圖片加亂數(防止cache)
+        let imgList = document.querySelectorAll('img')
+        let ran = Math.random(0,255).toString(16).substr(2,8);
+        for (let value of imgList) {
+            let srcData = value.getAttribute('src');
+            value.setAttribute('src', `${srcData}?v=${ran}`)
+        } 
+    </script>
 </body>
+
 </html>

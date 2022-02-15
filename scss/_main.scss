@@ -3,9 +3,9 @@ img {
     vertical-align: middle;
 }
 
-
 body {
-    background: #000 url(../images/tvWall.webp) no-repeat center top / contain;
+    background: #000  no-repeat center top / contain;
+    @include imageCacheBust('../images/tvWall.webp')
 }
 
 .indexBox{

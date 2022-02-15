@@ -69,7 +69,11 @@
     }
 }
 
-
+// 圖片加亂數(防止cache)
+$idRan:unique_id();
+@mixin imageCacheBust($url) {
+    background-image: url(#{$url}?v=#{$idRan});
+}
 
 
 
